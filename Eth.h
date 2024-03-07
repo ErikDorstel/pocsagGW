@@ -12,7 +12,6 @@ uint32_t downEvents;
 
 void initEth() {
   Ethernet.init(5);
-  SPI.setFrequency(10000000);
   uint64_t espid=ESP.getEfuseMac();
   Log.print(0,"ESP ID: %s\r\n",String(espid,HEX).c_str());
   // WiFiSTA: espid+0, WiFiAP: espid+1, Bluetooth: espid+2, Ethernet: espid+3
