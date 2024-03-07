@@ -302,8 +302,8 @@ class SX1278FSK {
         postValue+="&ric=" + String(ric);
         postValue+="&function=" + String(function);
         postValue+="&dau=" + urlencode(dau);
-        postValue+="&message=" + urlencode(message); }
-        //postHTTPS(postValue); }
+        postValue+="&message=" + urlencode(message);
+      postHTTP(postValue); }
       error.corrected=0; error.uncorrected=0; message=""; messageCount++; }
 
     void messageFiltered() {
