@@ -18,12 +18,12 @@ void help() {
   Log.print(0,"set afcbw [2.6-250|auto]\r\n");
   Log.print(0,"set bos\r\n");
   Log.print(0,"set daufilter [Filter]\r\n");
-  Log.print(0,"set dhcp [DHCP]\r\n");
+  Log.print(0,"set dhcp\r\n");
   Log.print(0,"set ip [static IP]\r\n");
   Log.print(0,"set gw [static Gateway]\r\n");
   Log.print(0,"set dns [static DNS]\r\n");
   Log.print(0,"set nm [static Netmask]\r\n");
-  Log.print(0,"set url [https://foo.de/foo]\r\n");
+  Log.print(0,"set url [http://foo.de/foo]\r\n");
   Log.print(0,"set password [Password]\r\n");
   Log.print(0,"restart ethernet\r\n");
   Log.print(0,"restart rx\r\n");
