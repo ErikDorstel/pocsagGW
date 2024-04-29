@@ -1,4 +1,4 @@
-// change C:\Users\xxxx\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.9\cores\esp32\Server.h
+// change C:\Users\xxxx\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.x\cores\esp32\Server.h
 // "virtual void begin(uint16_t port=0) =0;" to "virtual void begin() =0;"
 
 #include <SPI.h>

@@ -1,10 +1,17 @@
 #ifndef SX1278_ISR_H
 #define SX1278_ISR_H
 
-#define DIO0 26
-#define DIO1 27
-#define DIO2 32
-#define DIO3 33
+#ifdef T_ETH_LITE_S3
+  #define DIO0 38
+  #define DIO1 39
+  #define DIO2 40
+  #define DIO3 41
+#else
+  #define DIO0 26
+  #define DIO1 27
+  #define DIO2 32
+  #define DIO3 33
+#endif
 
 volatile bool detectDIO0Flag=false;
 volatile bool detectDIO3Flag=false;

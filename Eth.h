@@ -1,6 +1,18 @@
 #include <SPI.h>
 #include <Ethernet.h>
 
+#ifdef T_ETH_LITE_S3
+  #define ethMISO 11
+  #define ethMOSI 12
+  #define ethSCK 10
+  #define ethCS 9
+#else
+  #define ethMISO 19
+  #define ethMOSI 23
+  #define ethSCK 18
+  #define ethCS 5
+#endif
+
 bool ethDHCP;
 String ethIP="";
 String ethGW="";
@@ -11,7 +23,8 @@ uint32_t upEvents;
 uint32_t downEvents;
 
 void initEth() {
-  Ethernet.init(5);
+  SPI.begin(ethSCK,ethMISO,ethMOSI,ethCS);
+  Ethernet.init(ethCS);
   uint64_t espid=ESP.getEfuseMac();
   Log.print(0,"ESP ID: %s\r\n",String(espid,HEX).c_str());
   // WiFiSTA: espid+0, WiFiAP: espid+1, Bluetooth: espid+2, Ethernet: espid+3

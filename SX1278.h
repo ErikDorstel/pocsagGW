@@ -12,11 +12,19 @@ SPIClass *hspi=new SPIClass();
 #include "HTTPclient.h"
 #include "TELNET.h"
 
-#define MISO 12
-#define MOSI 13
-#define SCK 14
-#define CS 15
-#define RST 25
+#ifdef T_ETH_LITE_S3
+  #define MISO 16
+  #define MOSI 15
+  #define SCK 17
+  #define CS 18
+  #define RST 21
+#else
+  #define MISO 12
+  #define MOSI 13
+  #define SCK 14
+  #define CS 15
+  #define RST 25
+#endif
 
 #define regOpMode 0x1
 #define regBrMSB 0x2

@@ -15,7 +15,8 @@ SX1278 and ESP32 based POCSAG gateway
 * decoding of ROT1 encoded messages
 * Ethernet based http gateway to forwarding the messages
 * error correction by BCH decoding
-#### GPIO SX1278 (SPI)
+### ESP32 GPIO
+#### SX1278 (SPI)
 * GPIO 12 - MISO
 * GPIO 13 - MOSI
 * GPIO 14 - SCLK
@@ -26,11 +27,28 @@ SX1278 and ESP32 based POCSAG gateway
 * GPIO 27 - DIO1
 * GPIO 32 - DIO2
 * GPIO 33 - DIO3 (for future development)
-#### GPIO W5500 (SPI)
+#### W5500 (SPI)
 * GPIO 23 - MOSI
 * GPIO 19 - MISO
 * GPIO 18 - CLK
 * GPIO  5 - CS
+### ESP32-S3 (T-ETH-Lite) GPIO
+#### SX1278 (SPI)
+* GPIO 16 - MISO
+* GPIO 15 - MOSI
+* GPIO 17 - SCLK
+* GPIO 18 - CS
+#### other SX1278 connections
+* GPIO 21 - RESET
+* GPIO 38 - DIO0
+* GPIO 39 - DIO1
+* GPIO 40 - DIO2
+* GPIO 41 - DIO3 (for future development)
+#### W5500 (SPI)
+* GPIO 12 - MOSI
+* GPIO 11 - MISO
+* GPIO 10 - CLK
+* GPIO  9 - CS
 #### Development Hardware
 ![IMAGE ALT TEXT HERE](documentation/pocsagGW.png)
 #### Console Screenshot (DAPNET DB0HBO)

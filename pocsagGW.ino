@@ -1,3 +1,5 @@
+#define T_ETH_LITE_S3
+
 #include "SX1278.h"
 SX1278FSK modem(false,0);
 #include "CLI.h"
