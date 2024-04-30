@@ -4,6 +4,7 @@ SX1278 and ESP32 based POCSAG gateway
 * uses Semtech SX1278 as FSK receiver
 * also works with Semtech SX1276
 * uses W5500 Ethernet transceiver
+* works with EPS32 or ESP32-S3 (for example T-ETH-Lite with PoE)
 * receives 1200 bps, 4500 Hz shift POCSAG messages
 * serial console logging of received messages
 * serial console Command Line Interface for configuration and debugging
@@ -32,7 +33,7 @@ SX1278 and ESP32 based POCSAG gateway
 * GPIO 19 - MISO
 * GPIO 18 - CLK
 * GPIO  5 - CS
-### ESP32-S3 (T-ETH-Lite) GPIO
+### ESP32-S3 (T-ETH-Lite with PoE) GPIO
 #### SX1278 (SPI)
 * GPIO 16 - MISO
 * GPIO 15 - MOSI
